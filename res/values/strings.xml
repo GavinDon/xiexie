@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">歇歇生活</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="s_position">西安</string>
+    <string name="s_apptitle">家政云+</string>
+    <string name="s_starcompanay">明星公司</string>
+    <string name="s_joinstar">加入明星</string>
+    <string name="s_scintroduce">星级公司，享受高品质的服务。</string>
+    <string name="s_jsintroduce">推举明星的公司,该公司成立于2008年,受到高度好评！</string>
+    <string name="title_activity_star_company">StarCompanyActivity</string>
+    <string name="title_activity_join_star">JoinStarActivity</string>
+    <string name="s_search">请在这里输入搜索内容</string>
+    <string name="s_name">陕西欣欣家政服务有限公司</string>
+    <string name="s_rating">星级：</string>
+    <string name="s_server">日常打扫，月嫂，保姆，钟点工</string>
+    <string name="title_activity_company_detail">CompanyDetailActivity</string>
+    <string name="s_introduce">公司的服务宗旨是为了广大用户提高质量的家政服务。我公司签约公务人员全部经过上岗前强制培训，熟悉家政服务工作流程。</string>
+    <string name="title_activity_appointment">AppointmentActivity</string>
+    <string name="title_activity_confirm_indent">ConfirmIndentActivity</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="title_activity_apply_join">ApplyJoinActivity</string>
+    <string name="title_activity_clean">CleanActivity</string>
+    <string name="s_clean">保洁工市价为30-50元/小时，请根据价格定义您的招聘薪资，价格面谈。保洁工市价为请根据您的定价来招聘适合的人选 </string>
+    <string name="title_activity_oclock">OclockActivity</string>
+    <string name="title_activity_child">ChildActivity</string>
+    <string name="title_activity_confirm_indent2">ConfirmIndent2Activity</string>
+    <string name="title_activity_collect">CollectActivity</string>
+    <string name="title_activity_coupon">CouponActivity</string>
+    <string name="title_activity_msg_nofify">MsgNofifyActivity</string>
+    <string name="title_activity_service_proto">ServiceProtoActivity</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_accout_safe">AccoutSafeActivity</string>
+     <!-- 微信开发 -->
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="app_tip">提示</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <!-- 友盟开发 key -->
+    <string name="umeng_key">dafdb8e93bb5</string>
+     <!-- 链接网址为空 链接地址  -->
+    <string name="link_null">http://www.imxiexie.com/</string> 
+
+    <string-array name="spingarr">
+        <item>服务态度</item>
+        <item>服务质量</item>
+        <item>服务效果</item>
+        <item>员工素质</item>
+    </string-array>
+    <string-array name="spingyear">
+        <item>2015</item>
+        <item>2014</item>
+        <item>2013</item>
+        <item>2012</item>
+    </string-array>
+    <string-array name="spingmouth">
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="spingday">
+        <item>15</item>
+        <item>14</item>
+        <item>13</item>
+        <item>12</item>
+    </string-array>
+
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_user_info">UserInfoActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_cover">CoverActivity</string>
+    <string name="title_activity_all_comment">AllCommentActivity</string>
+    <string name="title_activity_city_location">CityLocationActivity</string>
+    <string name="title_activity_sever_complaint">SeverComplaintActivity</string>
+    <string name="title_activity_user_protocol">UserProtocolActivity</string>
+    <string name="title_activity_user_info_edit">UserInfoEdit</string>
+
+</resources>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/button_background"
+        android:visibility="visible" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_appoint_sure"
+        android:layout_width="400dp"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/xiexie10"
+        android:background="@drawable/selector_oppointment"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bt_appoint_sure"
+        android:layout_below="@id/title"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/button_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="14dp"
+                android:paddingTop="14dp" >
+
+                <ImageView
+                    android:id="@+id/appoint_companyLogo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/xiexie10"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pic_level" />
+
+                <TextView
+                    android:id="@+id/appoint_companyinclude"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xiexie10"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="13px"
+                    android:paddingRight="@dimen/xiexie10"
+                    android:text="家庭日常保洁，公司保洁，新房开荒等功能。"
+                    android:textColor="#888888"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divideline" />
+
+            <include layout="@layout/include_address" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divideline" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="13dp"
+                android:background="@color/button_background" />
+
+            <LinearLayout
+                android:id="@+id/ll_appoint_choice_server"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xiexie10"
+                    android:layout_weight="1"
+                    android:hint="选择服务"
+                    android:textColor="@color/black3"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/xiexie10"
+                    android:scaleType="center"
+                    android:src="@drawable/arrow_gray_r" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="13dp"
+                android:background="@color/button_background" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:background="@color/lowgray" />
+
+                <LinearLayout
+                    android:id="@+id/ll_appoint_choice_server_gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginLeft="@dimen/left_xiexie10"
+                    android:layout_marginRight="@dimen/right_xiexie10"
+                    android:background="@drawable/shape_icon_appointment"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/icon_appointment" />
+
+                    <TextView
+                        android:id="@+id/tv_appointment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:clickable="true"
+                        android:text="服务列表"
+                        android:textColor="#67c1b9"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divideline" />
+
+            <LinearLayout
+                android:id="@+id/ll_appoint_service_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <include layout="@layout/include_service_list" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="13dp"
+                    android:background="@color/button_background" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/divideline" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/xiexie10"
+                    android:paddingRight="@dimen/xiexie10"
+                    android:visibility="visible" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_gray32_money" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="订单金额"
+                        android:textColor="@color/black6"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_appoint_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/indent_green"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/divideline" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_appoint_choosedata"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/xiexie10"
+                android:layout_marginRight="@dimen/xiexie10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_gray32_day" />
+
+                <TextView
+                    android:id="@+id/appoint_data"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:hint="请选择日期"
+                    android:textColor="@color/black6"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/arrow_gray_d" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divideline" />
+
+            <LinearLayout
+                android:id="@+id/ll_appoint_choosetime"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/xiexie10"
+                android:layout_marginRight="@dimen/xiexie10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_gray32_time" />
+
+                <TextView
+                    android:id="@+id/appoint_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:hint="请选择时间"
+                    android:textColor="@color/black6"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/arrow_gray_d" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divideline" />
+
+            <include layout="@layout/include_beizhu" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

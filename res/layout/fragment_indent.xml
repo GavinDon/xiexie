@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_indent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:background="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divideline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/rg_indent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_all"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_rb_indent"
+                android:button="@null"
+                android:checked="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="@drawable/selector_rb_text"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="42dp"
+                android:background="@color/divideline" />
+
+            <RadioButton
+                android:id="@+id/rb_racing"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_rb_indent"
+                android:button="@null"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="抢单中"
+                android:textColor="@drawable/selector_rb_text"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="42dp"
+                android:background="@color/divideline" />
+
+            <RadioButton
+                android:id="@+id/rb_pay"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_rb_indent"
+                android:button="@null"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="待支付"
+                android:textColor="@drawable/selector_rb_text"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="42dp"
+                android:background="@color/divideline" />
+
+            <RadioButton
+                android:id="@+id/rb_service"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_rb_indent"
+                android:button="@null"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="服务中"
+                android:textColor="@drawable/selector_rb_text"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="42dp"
+                android:background="@color/divideline" />
+
+            <RadioButton
+                android:id="@+id/rb_finish"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_rb_indent"
+                android:button="@null"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="已完成"
+                android:textColor="@drawable/selector_rb_text"
+                android:textSize="17sp" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divideline" />
+    </LinearLayout>
+
+    <com.lhdz.pulltorefresh.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/lv_indent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#f0f0f0"
+        android:dividerHeight="13dp"
+        ptr:ptrDrawable="@drawable/loading" >
+    </com.lhdz.pulltorefresh.PullToRefreshListView>
+
+</LinearLayout>

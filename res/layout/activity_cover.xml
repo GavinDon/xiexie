@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    tools:context="com.lhdz.activity.CoverActivity" >
+
+
+
+        <ImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_cover" />
+
+        <TextView
+            android:id="@+id/tv_versionname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="22dp"
+            android:textColor="@color/white"
+            android:text="for android 1.05" />
+
+        <TextView
+            android:id="@+id/tv_domain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_versionname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="88dp"
+            android:text="www.imxiexie.com"
+            android:textColor="@color/white" />
+
+</RelativeLayout>

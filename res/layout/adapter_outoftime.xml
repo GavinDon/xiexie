@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/ll_outoftime"
+        android:layout_width="0dp"
+        android:gravity="center_vertical"
+        android:layout_height="65dp"
+        android:orientation="vertical"
+        android:layout_weight="0.7" >
+
+        <TextView
+            android:id="@+id/out_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/xiexie10"
+            android:text="订蛋糕送鲜花"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/out_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/xiexie10"
+            android:gravity="center_vertical"
+            android:text="新用户专享" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/out_iv"
+        android:layout_weight="0.4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/xiexie10"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/out_cake" />
+
+</LinearLayout>

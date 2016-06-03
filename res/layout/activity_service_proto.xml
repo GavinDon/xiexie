@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.lhdz.activity.ServiceProtoActivity" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/mine_setting" />
+
+    <RelativeLayout
+        android:id="@+id/rl_user_protocol"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/iv_usericon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/xiexie10"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_28_xieyi01" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/iv_usericon"
+            android:text="用户使用协议"
+            android:textColor="@color/black3"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/xiexie10"
+            android:src="@drawable/bg_right_arrow" />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/mine_setting" />
+
+    <RelativeLayout
+        android:id="@+id/user_complaint"
+        android:layout_width="match_parent"
+        android:layout_height="63dp" >
+
+        <ImageView
+            android:id="@+id/iv_esqicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/xiexie10"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_28_xieyi02" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/iv_esqicon"
+            android:text="用户服务投诉"
+            android:textColor="@color/black3"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/xiexie10"
+            android:src="@drawable/bg_right_arrow" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divideline" />
+
+</LinearLayout>

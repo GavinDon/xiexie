@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/pop_notice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:drawablePadding="6dp"
+            android:drawableTop="@drawable/index_icon01"
+            android:gravity="center"
+            android:text="公告"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/pop_starcom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="6dp"
+            android:drawableTop="@drawable/index_icon02"
+            android:gravity="center"
+            android:text="明星公司"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/pop_joinstar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="6dp"
+            android:drawableTop="@drawable/index_icon03"
+            android:gravity="center"
+            android:text="加入明星"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/pop_nearby"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:drawablePadding="6dp"
+            android:drawableTop="@drawable/index_icon04"
+            android:gravity="center"
+            android:text="附近"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="40dp"
+        android:drawablePadding="6dp"
+        android:src="@drawable/close_green" />
+
+</LinearLayout>

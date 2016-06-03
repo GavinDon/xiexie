@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_mybaby" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/divideline" />
+
+    <RadioGroup
+        android:id="@+id/rg_starbaby"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d1d1d1" />
+
+        <RadioButton
+            android:id="@+id/rb_starbaby_month"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_indent"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="本月排名"
+            android:textColor="@drawable/selector_rb_text"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d1d1d1" />
+
+        <RadioButton
+            android:id="@+id/rb_starbaby_quarter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_indent"
+            android:button="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="本季排名"
+            android:textColor="@drawable/selector_rb_text"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d1d1d1" />
+
+        <RadioButton
+            android:id="@+id/rb_starbaby_year"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_indent"
+            android:button="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="年底排名"
+            android:textColor="@drawable/selector_rb_text"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d1d1d1" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="3dp"
+        android:background="@color/divideline" />
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/xiexie10"
+        android:layout_marginRight="@dimen/xiexie10"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_search"
+        android:drawableRight="@drawable/bg_search"
+        android:hint="@string/s_search"
+        android:textSize="16sp" >
+    </EditText>
+
+    <ListView
+        android:id="@+id/lv_starbaby"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_join"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="@dimen/xiexie10"
+            android:layout_marginRight="@dimen/xiexie10"
+            android:layout_weight="1"
+            android:background="@drawable/selector_oppointment1"
+            android:gravity="center"
+            android:text="我要参赛"
+            android:textColor="@drawable/selector_rb_text1"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/bt_mybaby"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="@dimen/xiexie10"
+            android:layout_marginRight="@dimen/xiexie10"
+            android:layout_weight="1"
+            android:background="@drawable/selector_oppointment"
+            android:gravity="center"
+            android:text="我的宝宝"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>

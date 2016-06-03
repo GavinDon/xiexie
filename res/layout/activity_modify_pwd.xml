@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wide_spac_20px"
+        android:background="@color/spac_grey" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divideline" />
+
+    <com.lhdz.wediget.ClearEditText
+        android:id="@+id/et_modify_old_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:hint="请输入原始密码"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:paddingLeft="@dimen/left_xiexie10"
+        android:paddingRight="@dimen/right_xiexie10"
+        android:textColor="@color/black3"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divideline" />
+
+    <com.lhdz.wediget.ClearEditText
+        android:id="@+id/et_modify_first_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:hint="请输入新密码"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:paddingLeft="@dimen/left_xiexie10"
+        android:paddingRight="@dimen/right_xiexie10"
+        android:textColor="@color/black3"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divideline" />
+
+    <com.lhdz.wediget.ClearEditText
+        android:id="@+id/et_modify_second_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:hint="请再次输入新密码"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:paddingLeft="@dimen/left_xiexie10"
+        android:paddingRight="@dimen/right_xiexie10"
+        android:textColor="@color/black3"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divideline" />
+
+    <Button
+        android:id="@+id/btn_modify_sure"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="@dimen/left_xiexie10"
+        android:layout_marginRight="@dimen/right_xiexie10"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_oppointment"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</LinearLayout>

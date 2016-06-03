@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/addr_title"
+        layout="@layout/title_mybaby" />
+
+    <Button
+        android:id="@+id/addr_sure_bt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/xiexie10"
+        android:background="@drawable/selector_oppointment"
+        android:gravity="center"
+        android:text="确认"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <ListView
+        android:id="@+id/addr_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/addr_sure_bt"
+        android:layout_below="@id/addr_title" >
+    </ListView>
+
+</RelativeLayout>

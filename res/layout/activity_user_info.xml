@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.lhdz.activity.UserInfoActivity" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/mine_setting" />
+
+    <RelativeLayout
+        android:id="@+id/rl_chageicon"
+        android:layout_width="match_parent"
+        android:layout_height="63dp" >
+
+        <TextView
+            android:id="@+id/userinfo_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/xiexie10"
+            android:text="头像"
+            android:textColor="@color/black3"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/xiexie10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.lhdz.wediget.CircleImageView
+                android:id="@+id/userinfo_iv"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/pic_me_gray" />
+
+            <ImageView
+                android:id="@+id/userinfo_arrownext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_right_arrow" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divideline" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/mine_setting" />
+
+    <ListView
+        android:id="@+id/userinfo_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/divideline"
+        android:dividerHeight="1px" >
+    </ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divideline" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/mine_setting" />
+
+    <LinearLayout
+        android:id="@+id/lay_address"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_server_address_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/xiexie10"
+            android:text="服务地址"
+            android:textColor="@color/black3"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_server_address_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical|right"
+            android:singleLine="true"
+            android:text="西安市雁塔区电子二路"
+            android:textAlignment="center"
+            android:textColor="@color/black6"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:paddingRight="@dimen/xiexie10"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_right_arrow" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divideline" />
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_gpslocation"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPS定位"
+            android:textColor="@color/black6"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/location_tip"
+            android:layout_width="68dp"
+            android:layout_height="28dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/sel_location_tip"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/divideline" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="14dp"
+        android:text="最近访问城市"
+        android:textColor="@color/black6"
+        android:textSize="16sp" />
+
+    <GridView
+        android:id="@+id/gv_recentcity"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:cacheColorHint="#00000000"
+        android:listSelector="#00000000"
+        android:numColumns="4"
+        android:orientation="horizontal" >
+    </GridView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/divideline" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="14dp"
+        android:text="热门城市"
+        android:textColor="@color/black6"
+        android:textSize="16sp" />
+
+    <com.lhdz.wediget.RecountGridView
+        android:id="@+id/gv_hotcity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:cacheColorHint="#00000000"
+        android:listSelector="#00000000"
+        android:numColumns="3"
+        android:orientation="horizontal"
+        android:verticalSpacing="10dp" >
+    </com.lhdz.wediget.RecountGridView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/divideline" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="14dp"
+        android:text="全部城市"
+        android:textColor="@color/black6"
+        android:textSize="16sp" />
+
+</LinearLayout>

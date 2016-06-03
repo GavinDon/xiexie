@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.lhdz.activity.SettingActivity" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/mine_setting" />
+
+    <RelativeLayout
+        android:id="@+id/rl_accoutsafe"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginRight="-1dp"
+        android:background="@drawable/sel_white2gray"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/iv_item_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/xiexie10"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_28_saft01" />
+
+        <TextView
+            android:id="@+id/minelv_accoutsafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_item_setting"
+            android:text="帐号安全"
+            android:textColor="@color/black3"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/minelv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/xiexie10"
+            android:src="@drawable/arrow_gray_r" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_mine_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/divideline"
+        android:dividerHeight="1dp"
+        android:visibility="gone" >
+    </ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divideline" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/button_background" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divideline" />
+
+    <RelativeLayout
+        android:id="@+id/rl_about"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginRight="-1dp"
+        android:background="@drawable/sel_white2gray"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/iv_item_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/xiexie10"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_28_about" />
+
+        <TextView
+            android:id="@+id/tv_item_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/xiexie10"
+            android:layout_toRightOf="@id/iv_item_about"
+            android:text="关于"
+            android:textColor="@color/black3"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/xiexie10"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_version_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="13dp"
+                android:text=""
+                android:textColor="@color/black3"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/arrow_gray_r" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divideline" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tv_exitlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="@dimen/xiexie10"
+            android:layout_marginRight="@dimen/xiexie10"
+            android:background="@drawable/sel_exitlogin_button"
+            android:gravity="center"
+            android:text="退出登录"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

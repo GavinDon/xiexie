@@ -1,0 +1,7 @@
+数据库中字段说明：明星公司表：starcompanytable 首页主要业务表：coretable
+
+明星公司主要字段说明：1明星公司id,businessid   2名称，name        3星级，rating  4在列表中的显示位置， listseq  
+                5 主营业务，mainbusiness  6 公司简介的url，url
+
+首页主要业务字段说明：1父种类id,parentid, 2子类id,sonid  3子类名称 sonname 4父类名称 parentname 
+                5显示位置 listsqn  6功能简介 subsketch  7子类价格说明，subrmark

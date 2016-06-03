@@ -1,0 +1,133 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <!-- 全屏幕拉伸 -->
+    <style name="layout_full">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- 固定自身大小 -->
+    <style name="layout_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <!-- 宽度包裹 -->
+    <style name="layout_wrap_width">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    
+    <!-- 高度包裹 -->
+    <style name="layout_wrap_height">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 横向分布 -->
+    <style name="layout_horizontal" parent="layout_full">
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <!-- 纵向分布 -->
+    <style name="layout_vertical" parent="layout_full">
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="mypopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <!-- 指定显示的动画xml -->
+
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+    
+    <!-- 自定义黄色评价等级 -->
+    <style name="myRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/chage_smallstar</item>
+        <item name="android:minHeight">14dp</item>
+        <item name="android:maxHeight">14dp</item>
+    </style>
+
+    <style name="ProgressBarHorizontal_color" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/loading_progress_bar</item>
+        <item name="android:minHeight">2dp</item>
+        <item name="android:maxHeight">2dp</item>
+    </style>
+    
+    <style name="CustomProgressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!-- 边框 -->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item><!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->
+        <item name="android:windowContentOverlay">@null</item> 
+        <item name="android:backgroundDimAmount">0.7</item><!-- 用来控制灰度，当为1时，界面除了我们的dialog内容是高亮显示的，dialog以外的区域是黑色的 -->
+    </style>
+
+</resources>

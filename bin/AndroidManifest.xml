@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lhdz.activity"
+    android:versionCode="28"
+    android:versionName="1.1.10" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="23" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <!-- 系统级对话框 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 震动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />  
+    
+
+    <application
+        android:name="com.lhdz.publicMsg.MyApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true" >
+        </service>
+        
+		<!-- 百度地图 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="EuhO0N9aNjnRGmEKKo0Y9tGb" />
+        
+        <!-- 友盟社会化分享 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="56790cfa67e58e548f0020d3" >
+        </meta-data>
+        
+
+        <activity
+            android:name=".CoverActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         <!-- 微信支付必须使用的 -->
+        <activity
+            android:name="com.lhdz.activity.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:launchMode="singleTop" />
+        
+         <!-- 微信分享需要的回调activity -->
+        <activity
+            android:name="com.lhdz.activity.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 新浪微博分享需要的回调 -->
+        <activity
+            android:name="com.lhdz.activity.WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" >
+        </activity>
+        
+		<service android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false"></service>
+		
+		
+		
+		
+		
+		<!-- 项目activity -->
+		
+        <activity
+            android:name=".HomePagerFragment"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".StarCompanyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name=".CityLocationActivity"
+            android:label="@string/title_activity_city_location"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name=".JoinStarActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name=".CompanyDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AppointmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ConfirmIndentActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name=".ApplyJoinActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name=".CleanActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name=".OclockActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name=".ChildActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name=".ConfirmIndent2Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CollectActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name=".ChoiceServiceActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name=".AddServiceAddrsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name=".CouponActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MsgNofifyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ServiceProtoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".HelpActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AccoutSafeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AddressActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".AmbulanceActivity" >
+        </activity>
+        <activity
+            android:name=".ComplaintsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".ComplaintsActivity2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".EvaluationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MainFragment"
+            android:label="@string/title_activity_welcome"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".UserInfoActivity"
+            android:label="@string/title_activity_user_info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".StarbabyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MybabyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MybaobaoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".IwanttoplayActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".IncludeBabyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".RegisteredActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SetPwdActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ModifyPwdActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".BackPwdActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".OrderActivity"
+            android:screenOrientation="portrait" >
+             <intent-filter>  
+               <action android:name="android.intent.action.VIEW"/>  
+               <category android:name="android.intent.category.DEFAULT"/>  
+               <data android:scheme="wx7b43b4d5f3901b61"/>  
+           </intent-filter>  
+        </activity>
+        <activity
+            android:name=".BaseActivity"
+            android:label="@string/title_activity_base"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/title_activity_cover"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AllCommentActivity"
+            android:label="@string/title_activity_all_comment"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MoreActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".EditorbabyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".HomebjActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".HomeAppointmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Homebt2Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Homebt3Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Homebt4Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Homebt5Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Homebt6Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Homebt7Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Homebt8Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Homebt9Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Homebt10Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Homebt11Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Homebt12Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Homebt13Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Homebt14Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Homebt15Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".EvaluationDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TerminationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".IndentDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".RaceDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <!-- alipay sdk end -->
+
+        <service android:name="com.lhdz.service.NetWorkStateService" >
+        </service>
+        <service android:name="com.lhdz.service.HandleNetDataService" >
+        </service>
+
+        <activity
+            android:name=".HelpWebActivity"
+            android:label="@string/title_activity_sever_complaint"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name="com.lhdz.service.UpdateAppService" >
+        </service>
+
+        <activity
+            android:name=".UserInfoEdit"
+            android:label="@string/title_activity_user_info_edit"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

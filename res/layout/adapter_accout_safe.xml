@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sel_white2gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/accountsafe_ll_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:background="@color/spac_grey" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divideline" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/accountsafe_rl_all"
+        android:gravity="center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="63dp" >
+
+        <ImageView
+            android:id="@+id/accoutsafe_iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/xiexie10"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/accoutsafe_tv_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/xiexie10"
+            android:layout_toRightOf="@id/accoutsafe_iv_icon"
+            android:text="名称"
+            android:textColor="@color/black3"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/accoutsafe_iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/xiexie10"
+            android:src="@drawable/arrow_gray_r" />
+
+        <TextView
+            android:id="@+id/accoutsafe_tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/accoutsafe_iv_arrow"
+            android:text="13720417643"
+            android:textColor="@color/black6" />
+    </RelativeLayout>
+
+</LinearLayout>

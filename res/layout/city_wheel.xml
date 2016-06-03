@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E9E9E9"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/pop_city_cacel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/xiexie10"
+            android:text="取消"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/pop_city_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/xiexie10"
+            android:text="确定"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.lhdz.wheel.WheelView
+            android:id="@+id/citypop_id_province"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </com.lhdz.wheel.WheelView>
+
+        <com.lhdz.wheel.WheelView
+            android:id="@+id/citypop_id_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </com.lhdz.wheel.WheelView>
+
+        <com.lhdz.wheel.WheelView
+            android:id="@+id/citypop_id_district"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </com.lhdz.wheel.WheelView>
+    </LinearLayout>
+
+</LinearLayout>

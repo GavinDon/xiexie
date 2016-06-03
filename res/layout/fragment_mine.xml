@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layss1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gree_title" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:visibility="invisible" >
+
+            <TextView
+                android:id="@+id/public_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@drawable/arrow_b"
+                android:drawablePadding="4dp"
+                android:text="返回"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="标题"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/fl_login"
+                android:layout_width="match_parent"
+                android:layout_height="116dp"
+                android:background="@drawable/bg_me_top" >
+
+                <LinearLayout
+                    android:id="@+id/notlogin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/click_login"
+                        android:layout_width="96dp"
+                        android:layout_height="38dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/shape_white_solid"
+                        android:gravity="center"
+                        android:text="点击登录"
+                        android:textColor="@color/black6"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="歇歇,让享受更简单!"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="3dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tv_register"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableRight="@drawable/arrow_white_r"
+                            android:text=" 立即注册"
+                            android:textColor="@drawable/sel_white2gree_text"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_mine"
+                    android:layout_width="match_parent"
+                    android:layout_height="116dp"
+                    android:visibility="gone" >
+
+                    <com.lhdz.wediget.CircleImageView
+                        android:id="@+id/iv_mine_icon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pic_me_gray" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/iv_mine_icon"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/mine_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="点击登录"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_mine_account"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/ll_mine"
+                            android:layout_alignTop="@+id/mine_userinfo"
+                            android:layout_marginTop="8dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/xiexie10"
+                        android:clickable="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/arrow_white_r" />
+                </RelativeLayout>
+            </FrameLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/divideline" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:background="#f8f8f8" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/divideline" />
+
+            <ListView
+                android:id="@+id/lv_mine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@color/red"
+                android:divider="@color/divideline"
+                android:dividerHeight="1px" >
+            </ListView>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/divideline" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="13dp"
+                android:background="@color/button_background" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divideline" />
+
+            <RelativeLayout
+                android:id="@+id/rl_set"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:background="@drawable/sel_white2gray"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/minelv_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/xiexie10"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_28_set" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/minelv_iv"
+                    android:text="设置"
+                    android:textColor="@color/black3"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/minelv_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/xiexie10"
+                    android:src="@drawable/arrow_gray_r" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divideline" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

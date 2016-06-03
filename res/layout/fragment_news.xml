@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+
+    <include layout="@layout/title_indent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/divideline" />
+
+    <RadioGroup
+        android:id="@+id/rg_news"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d1d1d1" />
+
+        <RadioButton
+            android:id="@+id/rb_family_environment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_indent"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="家庭环境"
+            android:textColor="@drawable/selector_rb_text"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d1d1d1" />
+
+        <RadioButton
+            android:id="@+id/rb_family_health"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_indent"
+            android:button="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="家庭卫生"
+            android:textColor="@drawable/selector_rb_text"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d1d1d1" />
+
+        <RadioButton
+            android:id="@+id/rb_family_healthy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_indent"
+            android:button="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="养生健康"
+            android:textColor="@drawable/selector_rb_text"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d1d1d1" />
+
+        <RadioButton
+            android:id="@+id/rb_ambulance"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_indent"
+            android:button="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="紧急救护"
+            android:textColor="@drawable/selector_rb_text"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d1d1d1" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="3dp"
+        android:background="@color/divideline" />
+
+    <ListView
+        android:id="@+id/lv_news"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

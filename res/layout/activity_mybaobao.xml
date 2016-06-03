@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/ic_mybaby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+
+        <include layout="@layout/title_" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_confirm_entry"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/xiexie10"
+        android:background="@drawable/selector_oppointment"
+        android:gravity="center"
+        android:text="提交并参赛"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bt_confirm_entry"
+        android:layout_below="@id/ic_mybaby"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/xiexie10"
+                android:text="徐子轩"
+                android:textColor="@color/colorbaby1"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="小公主"
+                android:textColor="@color/colorbaby4"
+                android:textSize="18.6sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/xiexie10"
+                android:text="参赛编号："
+                android:textColor="@color/colorbaby3"
+                android:textSize="10.7sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="参赛编号在确定参赛后生成"
+                android:textColor="@color/colorbaby3"
+                android:textSize="10.7sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/xiexie10"
+                android:text="生         日："
+                android:textColor="@color/colorbaby3"
+                android:textSize="10.7sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2014-12-18"
+                android:textColor="@color/colorbaby3"
+                android:textSize="10.7sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/xiexie10"
+                android:layout_marginTop="12dp"
+                android:text="宝宝介绍"
+                android:textColor="@color/colorbaby1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/xiexie10"
+                android:layout_marginRight="@dimen/xiexie10"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:text="宝宝身强体壮，虎头虎脑，非常健康"
+                android:textColor="@color/colorbaby3"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前票数"
+                android:textColor="@color/colorbaby2"
+                android:textSize="18.6sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(5049)"
+                android:layout_marginRight="@dimen/xiexie10"
+                android:textColor="@color/colorbaby2"
+                android:textSize="18.6sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/divideline" />
+    </LinearLayout>
+
+</RelativeLayout>

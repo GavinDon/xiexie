@@ -1,0 +1,156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.lhdz.activity.CollectActivity" >
+
+    <include layout="@layout/title_" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divideline" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d1d1d1" />
+
+        <RadioButton
+            android:id="@+id/rb_company"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_indent"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="公司"
+            android:textColor="@drawable/selector_rb_text"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d1d1d1" />
+
+        <RadioButton
+            android:id="@+id/rb_server"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_indent"
+            android:button="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="服务者"
+            android:textColor="@drawable/selector_rb_text"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d1d1d1" />
+
+        <RadioButton
+            android:id="@+id/rb_goods"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_indent"
+            android:button="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="商品"
+            android:textColor="@drawable/selector_rb_text"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d1d1d1" />
+
+        <RadioButton
+            android:id="@+id/rb_other"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:background="@drawable/selector_threeline"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/sel_company_text"
+            android:textSize="17sp" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="3dp"
+        android:background="@color/divideline"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="@dimen/left_xiexie10"
+        android:layout_marginRight="@dimen/right_xiexie10"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/shape_search"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_search" />
+
+        <com.lhdz.wediget.ClearEditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/s_search"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textSize="16sp" >
+        </com.lhdz.wediget.ClearEditText>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="13dp"
+        android:background="@color/divideline" />
+
+    <ListView
+        android:id="@+id/lv_collect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="13dp"
+        android:divider="@color/button_background"
+        android:dividerHeight="1px"
+        android:gravity="center_vertical"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

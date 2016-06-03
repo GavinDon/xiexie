@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="13dp"
+        android:background="@color/divideline" />
+
+    <RadioGroup
+        android:id="@+id/rg_choice"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d1d1d1" />
+
+        <RadioButton
+            android:id="@+id/rb_choice_company"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_indent"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="公司名称"
+            android:textColor="@drawable/selector_rb_text"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d1d1d1" />
+
+        <RadioButton
+            android:id="@+id/rb_choice_star"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_indent"
+            android:button="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="评价星级"
+            android:textColor="@drawable/selector_rb_text"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d1d1d1" />
+
+        <RadioButton
+            android:id="@+id/rb_choice_offer"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_indent"
+            android:button="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="报价"
+            android:textColor="@drawable/selector_rb_text"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d1d1d1" />
+
+        <RadioButton
+            android:id="@+id/rb_choice_more"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="0.8"
+            android:background="@drawable/selector_threeline"
+            android:button="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textColor="@drawable/selector_rb_text"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d1d1d1" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="3dp"
+        android:background="@color/divideline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/left_xiexie10"
+        android:layout_marginRight="@dimen/right_xiexie10"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_search"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_search" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/s_search"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textSize="16sp" >
+        </EditText>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_news"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

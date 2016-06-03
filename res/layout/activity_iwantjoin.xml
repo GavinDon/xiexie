@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/lay_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_yulan"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="@dimen/xiexie10"
+            android:layout_marginRight="@dimen/xiexie10"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_oppointment1"
+            android:gravity="center"
+            android:text="预览"
+            android:textColor="@drawable/selector_rb_text1"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/bt_confirm_entry"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="@dimen/xiexie10"
+            android:layout_marginRight="@dimen/xiexie10"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_oppointment"
+            android:gravity="center"
+            android:text="提交并参赛"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/lay_title"
+        layout="@layout/title_" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/lay_btn"
+        android:layout_below="@id/lay_title"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/xiexie10"
+            android:layout_marginRight="@dimen/xiexie10"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宝贝名字："
+                android:textColor="@color/colorbaby1"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_text"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorbaby1"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/xiexie10"
+            android:layout_marginRight="@dimen/xiexie10"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宝贝性别："
+                android:textColor="@color/colorbaby1"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/rb_sex"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_man"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="男"
+                    android:textColor="@color/colorbaby1"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_woman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="女"
+                    android:textColor="@color/colorbaby1"
+                    android:textSize="16sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/xiexie10"
+            android:layout_marginRight="@dimen/xiexie10"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宝贝生日："
+                android:textColor="@color/colorbaby1"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_text"
+                android:entries="@array/spingyear"
+                android:hint="   年"
+                android:textColor="@color/colorbaby1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="14dp"
+                android:text="年"
+                android:textColor="@color/colorbaby1"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_text"
+                android:entries="@array/spingmouth"
+                android:hint="   月"
+                android:textColor="@color/colorbaby1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="14dp"
+                android:text="月"
+                android:textColor="@color/colorbaby1"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_text"
+                android:entries="@array/spingday"
+                android:hint="   日"
+                android:textColor="@color/colorbaby1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="14dp"
+                android:text="日"
+                android:textColor="@color/colorbaby1"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/divideline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/xiexie10"
+                android:text="宝贝介绍："
+                android:textColor="@color/colorbaby1"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginRight="@dimen/xiexie10"
+                android:background="@drawable/shape_text"
+                android:gravity="top|left"
+                android:text="宝宝身强体壮，虎头虎脑，非常健康"
+                android:textColor="@color/colorbaby3"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/divideline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/xiexie10"
+            android:layout_marginRight="@dimen/xiexie10"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:background="@drawable/selector_commitimg"
+                android:text="上传照片"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_weight="1"
+                android:text="最多上传6张照片"
+                android:textColor="@color/colorbaby4"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="@dimen/xiexie10"
+            android:layout_marginRight="@dimen/xiexie10"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+</RelativeLayout>

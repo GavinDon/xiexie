@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/left_xiexie10"
+        android:layout_marginRight="@dimen/right_xiexie10"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/service_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="日常保洁"
+            android:textColor="@color/black3"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/service_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="13dp"
+            android:lineSpacingExtra="13px"
+            android:text="@string/s_introduce"
+            android:textColor="@color/black3"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/service_pic"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginBottom="13dp"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divideline" />
+
+</LinearLayout>

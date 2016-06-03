@@ -1,0 +1,244 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.lhdz.activity.CleanActivity" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/title_" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/unify_top" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/s_clean"
+            android:textColor="@color/red"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/et_housearea"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/shape_search"
+            android:hint="   房屋面积"
+            android:inputType="numberDecimal|textAutoCorrect"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_price"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/shape_search"
+            android:hint="   心里价位"
+            android:numeric="decimal"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/shape_search"
+            android:hint="   手机号码"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:selectAllOnFocus="true"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_starttime"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="14dp"
+                android:layout_weight="2"
+                android:background="@drawable/shape_search"
+                android:hint="   开始时间 "
+                android:inputType="time"
+                android:maxLength="11"
+                android:selectAllOnFocus="true"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_search"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/selector_minustime"
+                    android:clickable="true"
+                    android:scaleType="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="2小时"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/selector_plustime"
+                    android:clickable="true"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_sunday"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="周日"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_week"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="周一"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_week"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="周二"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_week"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="周三"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_week"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="周四"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_week"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="周五"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="14dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_sunday"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="周六"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_search"
+            android:gravity="left"
+            android:hint="备注说明"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/clean_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_oppointment"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</ScrollView>

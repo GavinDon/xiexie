@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_more_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/xiexie10"
+                android:layout_marginLeft="@dimen/xiexie10"
+                android:layout_marginRight="@dimen/xiexie10"
+                android:layout_marginTop="@dimen/xiexie10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/class_icon_01" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="保洁"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <com.lhdz.wediget.LineGridView
+                android:id="@+id/gv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:numColumns="4"
+                android:orientation="horizontal"
+                android:scrollbars="none" >
+            </com.lhdz.wediget.LineGridView>
+
+            <LinearLayout
+                android:id="@+id/ll_more_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/class_icon_02" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="微装修"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <com.lhdz.wediget.LineGridView
+                android:id="@+id/gv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:numColumns="4"
+                android:orientation="horizontal"
+                android:scrollbars="none" >
+            </com.lhdz.wediget.LineGridView>
+
+            <LinearLayout
+                android:id="@+id/ll_more_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/class_icon_03" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="搬家"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <com.lhdz.wediget.LineGridView
+                android:id="@+id/gv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:numColumns="4"
+                android:orientation="horizontal"
+                android:scrollbars="none" >
+            </com.lhdz.wediget.LineGridView>
+
+            <LinearLayout
+                android:id="@+id/ll_more_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/class_icon_04" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="家电维修"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <com.lhdz.wediget.LineGridView
+                android:id="@+id/gv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:numColumns="4"
+                android:orientation="horizontal"
+                android:scrollbars="none" >
+            </com.lhdz.wediget.LineGridView>
+
+            <LinearLayout
+                android:id="@+id/ll_more_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/class_icon_05" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="家具维修"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <com.lhdz.wediget.LineGridView
+                android:id="@+id/gv5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:numColumns="4"
+                android:orientation="horizontal"
+                android:scrollbars="none" >
+            </com.lhdz.wediget.LineGridView>
+
+            <LinearLayout
+                android:id="@+id/ll_more_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/class_icon_06" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="管道疏通"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <com.lhdz.wediget.LineGridView
+                android:id="@+id/gv6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:numColumns="4"
+                android:orientation="horizontal"
+                android:scrollbars="none" >
+            </com.lhdz.wediget.LineGridView>
+
+            <LinearLayout
+                android:id="@+id/ll_more_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/class_icon_07" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="生活配送"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <com.lhdz.wediget.LineGridView
+                android:id="@+id/gv7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:numColumns="4"
+                android:orientation="horizontal"
+                android:scrollbars="none" >
+            </com.lhdz.wediget.LineGridView>
+
+            <LinearLayout
+                android:id="@+id/ll_more_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/class_icon_08" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="鲜花植物"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <com.lhdz.wediget.LineGridView
+                android:id="@+id/gv8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:numColumns="4"
+                android:orientation="horizontal"
+                android:scrollbars="none" >
+            </com.lhdz.wediget.LineGridView>
+
+            <LinearLayout
+                android:id="@+id/ll_more_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/class_icon_09" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="宠物服务"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <com.lhdz.wediget.LineGridView
+                android:id="@+id/gv9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:numColumns="4"
+                android:orientation="horizontal"
+                android:scrollbars="none" >
+            </com.lhdz.wediget.LineGridView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

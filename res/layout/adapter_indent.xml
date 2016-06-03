@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#dff6f4"
+    android:orientation="vertical"
+     >
+  <LinearLayout
+     
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_marginTop="6dp">
+      
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#befffa">
+        <TextView 
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/s_name"
+            android:textSize="14sp"
+            android:paddingLeft="14dp"
+            android:textColor="@color/black"
+            />
+        
+        <TextView
+             
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="抢单中"
+            android:textSize="14sp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订单号：JLY26369942321152244669423"
+        android:paddingLeft="14dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+        <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="服务类型: 钟点服务"
+            android:textSize="12sp"
+            android:paddingLeft="14dp"
+            android:textColor="#aab3b2"
+            />
+        
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="服务时长: 2小时"
+            android:textSize="12sp"
+            android:textColor="#aab3b2"/>
+    </LinearLayout>
+            <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+             
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="订单金额: 80元"
+            android:textSize="12sp"
+            android:paddingLeft="14dp"
+            android:textColor="#aab3b2"
+            />
+        
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="心理价位: 40元/小时"
+            android:textSize="12sp"
+            android:textColor="#aab3b2"/>
+    </LinearLayout>
+      <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="14dp"
+        android:gravity="right"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:layout_width="76dp"
+            android:layout_height="23dp"
+            android:background="@drawable/selector_oppointment"
+            android:gravity="center"
+            android:text="撤单"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginRight="14dp"
+             />
+        <Button
+            
+            android:layout_width="76dp"
+            android:layout_height="23dp"
+            android:background="@drawable/selector_oppointment"
+            android:gravity="center"
+            android:text="选择服务"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginRight="14dp"
+             />
+    </LinearLayout>
+   </LinearLayout>
+</LinearLayout>

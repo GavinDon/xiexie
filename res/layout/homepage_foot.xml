@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/ll_home_foot_login"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录之后内容更精彩"
+            android:textColor="@color/indent_green" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableRight="@drawable/arrow_gray_r"
+            android:text="现在去登录 "
+            android:textColor="@color/indent_green" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divideline" />
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wide_spac_20px"
+        android:background="@color/spac_grey" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divideline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="手机号码"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="35dp"
+            android:background="@color/divideline" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/rbindent"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="设置密码"
+            android:textColor="@color/black6"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divideline" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/wide_spac_20px"
+        android:background="@color/divideline" />
+
+    <EditText
+        android:id="@+id/et_back_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/left_xiexie10"
+        android:layout_marginRight="@dimen/right_xiexie10"
+        android:background="@null"
+        android:hint="请输入手机号码"
+        android:inputType="number"
+        android:maxLength="11"
+        android:textColor="@color/black3"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divideline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_back_code"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="@dimen/left_xiexie10"
+            android:layout_marginRight="@dimen/right_xiexie10"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textSize="14sp" />
+
+        <com.lhdz.wediget.TimeButton
+            android:id="@+id/btn_back_code"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginRight="@dimen/right_xiexie10"
+            android:background="@drawable/selector_oppointment"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="获取验证码"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divideline" />
+
+    <Button
+        android:id="@+id/btn_back_sure"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="@dimen/left_xiexie10"
+        android:layout_marginRight="@dimen/right_xiexie10"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_oppointment"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</LinearLayout>
